@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+.container_hero {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.image_hero_content img {
+    width: 1440px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.button_hero {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--vermelho);
+    font-family: var(--fonteWork);
+    font-size: 20px;
+    color: var(--branco-texto);
+    bottom: 170px;
+    left: 17%;
+    transform: translateX(-50%);
+    color: white;
+    cursor: pointer;
+}
+
+.button_hero:hover {
+    background-color: var(--vermelho-escuro);
+}
