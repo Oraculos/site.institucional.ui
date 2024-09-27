@@ -24,6 +24,7 @@
     color: var(--branco-texto);
     gap: 40px;
     text-align: justify;
+    color: var(--preto-texto);
 }
 
 .images{
