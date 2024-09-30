@@ -1,19 +1,4 @@
-
-import './App.css'
-import Header from './componentes/head'
-import Hero from './componentes/hero'
-import SecondarySection from './componentes/secondarySection'
-import Footer from './componentes/footer'
-
-function App() {
-  return (
-    <div className='container_hero'>
-    <Header />
-    <Hero />
-    <SecondarySection />
-    <Footer />
-    </div>
-  )
+import Router from "./Router.jsx";
+export default function App() {
+  return <Router />;
 }
-
-export default App
