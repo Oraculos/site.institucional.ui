@@ -12,7 +12,8 @@ import Carousel from './componentes/carousel'
 function App() {
   return (
     <div className='container_hero'>
-    <Carousel/>
+    <Header/>
+    
     </div>
   )
 }
