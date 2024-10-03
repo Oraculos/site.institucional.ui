@@ -8,12 +8,16 @@ import AboutLuis from './componentes/aboutLuis'
 
 function App() {
   return (
-    <div className='container_hero'>
-    <Header />
-    <Hero />
-    <SecondarySection />
-    <AboutLuis />
-    <Footer />
+    <div>
+      <div className="headerDiv">
+        <Header />
+      </div>
+      <div className='fullContainerPage'>
+        <Hero />
+        <SecondarySection />
+        <AboutLuis />
+        <Footer />
+      </div>
     </div>
   )
 }

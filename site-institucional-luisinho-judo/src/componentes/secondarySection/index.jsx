@@ -3,6 +3,7 @@ import fotoInstituto1 from './assets/placeholder.svg';
 import fotoInstituto2 from './assets/placeholder.svg';
 import logo from './assets/logo.svg';
 import judokas from './assets/judokas.svg';
+import { Container } from '@mui/material';
 
 export default function SecondarySection() {
     return (
@@ -27,3 +28,4 @@ export default function SecondarySection() {
         </div>
     )
 }
+
