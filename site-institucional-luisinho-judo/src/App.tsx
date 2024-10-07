@@ -5,8 +5,9 @@ import Hero from './componentes/hero'
 import SecondarySection from './componentes/secondarySection'
 import Footer from './componentes/footer'
 import AboutLuis from './componentes/aboutLuis'
+import Teachers from './componentes/teachers'
 
-function App() {
+export default function App() {
   return (
     <div>
       <div className="headerDiv">
@@ -16,10 +17,11 @@ function App() {
         <Hero />
         <SecondarySection />
         <AboutLuis />
+        <Teachers />
         <Footer />
       </div>
     </div>
   )
 }
 
-export default App
+
