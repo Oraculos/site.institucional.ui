@@ -1,18 +1,21 @@
-.container_section{
+.container_section {
     display: flex;
     flex-direction: row;
     background-color: var(--preto);
     height: 700px;
-    width: 100%;
+    width: calc(100% + 32px); /* Expandindo para ultrapassar as margens do Container */
+    margin-left: -16px; /* Compensando a margem do Container */
+    margin-right: -16px; /* Compensando a margem do Container */
+    width: 100vw;
 }
 
-.leftSection{
+.leftSection {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 50%;
+    padding: 0 16px; /* Adicionando padding para alinhar o conteúdo dentro das margens do Container */
 }
-
 
 .text{
     display: flex;
@@ -42,6 +45,7 @@
     align-items: center;
     width: 50%;
     height: auto;
+    padding: 0 16px;
 }
 
 .hero img {
@@ -53,10 +57,14 @@
     z-index: 2;
     opacity: 1;
     margin-top: 100px;
+    width: 90%;
+    height: auto;
 }
 
 .hero img:last-child {
     z-index: 1;
     opacity: 0.5; 
+    width: 90%;
+    height: auto;
 }
 
