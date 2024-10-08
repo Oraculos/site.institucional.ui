@@ -3,9 +3,8 @@
     flex-direction: row;
     background-color: var(--preto);
     height: 700px;
-    width: calc(100% + 32px); /* Expandindo para ultrapassar as margens do Container */
-    margin-left: -16px; /* Compensando a margem do Container */
-    margin-right: -16px; /* Compensando a margem do Container */
+    margin-left: -16px;
+    margin-right: -16px;
     width: 100vw;
 }
 
@@ -14,7 +13,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 50%;
-    padding: 0 16px; /* Adicionando padding para alinhar o conteúdo dentro das margens do Container */
+    padding: 0 16px;
 }
 
 .text{
@@ -25,7 +24,7 @@
     padding: 0 2rem;
     font-family: var(--fonteWork);
     color: var(--branco-texto);
-    gap: 40px;
+    gap: 20px;
     text-align: justify;
     color: var(--branco-texto);
 }
