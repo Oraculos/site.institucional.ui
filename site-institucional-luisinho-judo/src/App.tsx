@@ -1,21 +1,29 @@
 
-import './App.css'
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Header from './componentes/head'
-import Hero from './componentes/hero'
-import SecondarySection from './componentes/secondarySection'
-import Footer from './componentes/footer'
-import AboutLuis from './componentes/aboutLuis'
-import Carousel from './componentes/carousel'
+import "slick-carousel/slick/slick.css";
+import './App.css';
+import AboutLuis from './componentes/aboutLuis';
+import Footer from './componentes/footer';
+import Header from './componentes/head';
+import Hero from './componentes/hero';
+import SecondarySection from './componentes/secondarySection';
+import Teachers from './componentes/teachers';
 
-function App() {
+export default function App() {
   return (
-    <div className='container_hero'>
-    <Header/>
-    
+    <div>
+      <div className="headerDiv">
+        <Header />
+      </div>
+      <div className='fullContainerPage'>
+        <Hero />
+        <SecondarySection />
+        <AboutLuis />
+        <Teachers />
+        <Footer />
+      </div>
     </div>
   )
 }
 
-export default App
+
