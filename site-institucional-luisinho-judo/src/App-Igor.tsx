@@ -6,7 +6,6 @@ import SecondarySection from './componentes/secondarySection'
 import Footer from './componentes/footer'
 import AboutLuis from './componentes/aboutLuis'
 import Teachers from './componentes/teachers'
-import ComoParticipar from './componentes/comoParticipar'
 
 export default function App() {
   return (
@@ -19,7 +18,6 @@ export default function App() {
         <SecondarySection />
         <AboutLuis />
         <Teachers />
-        <ComoParticipar />
         <Footer />
       </div>
     </div>
