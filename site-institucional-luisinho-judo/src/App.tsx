@@ -11,7 +11,7 @@ import FooterHistoria from './componentes/footerHistoria'
 
 export default function App() {
   return (
-    <div>
+    <div>-
       <div className="headerDiv">
         <Header />
       </div>
