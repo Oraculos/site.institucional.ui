@@ -22,16 +22,6 @@ export default function App() {
         <Header />
       </div>
       <div className='fullContainerPage'>
-        <Hero />
-        <SecondarySection />
-        <AboutLuis />
-        <Teachers />
-        <ComoParticipar />
-        <Footer />
-      <HistoriaHero/>
-      <TecnicaHero/>
-      <FaixasHero/>
-      <LutasHero/>
       </div>
     </div>
   )
