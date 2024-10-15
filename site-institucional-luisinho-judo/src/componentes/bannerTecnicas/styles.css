@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fonte);
 }
 
 .container_tecniqueHero {
@@ -21,5 +20,12 @@
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    font-family: var(--fonteWork);
+}
 
+.text_techniques{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
