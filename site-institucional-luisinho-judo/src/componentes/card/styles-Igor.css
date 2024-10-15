@@ -2,6 +2,7 @@
 .card {
     width: 240px;
     height: 250px;
+    background-color: #ffeb3b; /* Yellow background */
     transition: transform 0.2s;
 }
 
@@ -21,7 +22,7 @@
 
 .card-text {
     font-size: 1rem;
-    color: var(--preto-texto); 
+    color: var(--branco-texto); 
 }
 
 
