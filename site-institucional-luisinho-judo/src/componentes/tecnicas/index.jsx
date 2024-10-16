@@ -6,17 +6,17 @@ import TechniqueCard from './TechniqueCard'; // Import the TechniqueCard compone
 const Techniques = () => {
   const nageWazaTechniques = [
     { name: 'Seoi-Nage', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/te-waza/seoi-nage new.png', japaneseLetters: '背負投' },
-    { name: 'Sumi-Otoshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/te-waza/sumi-otoshi new.png', japaneseLetters: '背負投' },
-    { name: 'Tai-Otoshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/te-waza/tai-otoshi new.png', japaneseLetters: '背負投' },
-    { name: 'Kata-Guruma', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/te-waza/kata-guruma new.png', japaneseLetters: '背負投' },
-    { name: 'Uki-Goshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/koshi-waza/uki-goshi new.png', japaneseLetters: '背負投' },
-    { name: 'Ushiro-Goshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/koshi-waza/ushiro-goshi new.png', japaneseLetters: '背負投' },
-    { name: 'Harai-Goshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/koshi-waza/harai-goshi new.png', japaneseLetters: '背負投' },
-    { name: 'Tsuri-Komi-Goshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/koshi-waza/tsuri-komi-goshi new.png', japaneseLetters: '背負投' },
-    { name: 'De-Ashi-Barai', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/ashi-waza/de-ashi-barai new.png', japaneseLetters: '背負投' },
-    { name: 'Osoto-Guruma', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/ashi-waza/osoto-guruma new.png', japaneseLetters: '背負投' },
-    { name: 'Hiza-Guruma', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/ashi-waza/hiza-guruma new.png', japaneseLetters: '背負投' },
-    { name: 'O-Uchi-Gari', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/ashi-waza/o-uchi-gari new.png', japaneseLetters: '背負投' },
+    { name: 'Sumi-Otoshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/te-waza/sumi-otoshi new.png', japaneseLetters: '隅落' },
+    { name: 'Tai-Otoshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/te-waza/tai-otoshi new.png', japaneseLetters: '体落' },
+    { name: 'Kata-Guruma', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/te-waza/kata-guruma new.png', japaneseLetters: '肩車' },
+    { name: 'Uki-Goshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/koshi-waza/uki-goshi new.png', japaneseLetters: '浮腰' },
+    { name: 'Ushiro-Goshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/koshi-waza/ushiro-goshi new.png', japaneseLetters: '後腰' },
+    { name: 'Harai-Goshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/koshi-waza/harai-goshi new.png', japaneseLetters: '払腰' },
+    { name: 'Tsuri-Komi-Goshi', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/koshi-waza/tsuri-komi-goshi new.png', japaneseLetters: '浮腰' },
+    { name: 'De-Ashi-Barai', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/ashi-waza/de-ashi-barai new.png', japaneseLetters: '出足払' },
+    { name: 'Osoto-Guruma', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/ashi-waza/osoto-guruma new.png', japaneseLetters: '大外車' },
+    { name: 'Hiza-Guruma', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/ashi-waza/hiza-guruma new.png', japaneseLetters: '膝車' },
+    { name: 'O-Uchi-Gari', imageSrc: 'src/componentes/tecnicas/assets/nage_waza/ashi-waza/o-uchi-gari new.png', japaneseLetters: '大内刈' },
   ];
 
   const katameWazaTechniques = [

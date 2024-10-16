@@ -22,6 +22,11 @@ export default function App() {
         <Header />
       </div>
       <div className='fullContainerPage'>
+        <HistoriaHero />
+        <TecnicaHero />
+        <FaixasHero />
+        <LutasHero />
+        <Footer />
       </div>
     </div>
   )
