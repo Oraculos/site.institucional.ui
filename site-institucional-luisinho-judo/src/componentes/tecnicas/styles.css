@@ -18,6 +18,33 @@
     position: relative;
 }
 
+.category h2 {
+    font-size: var(--h2);
+    font-family: var(--fonteWork);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    display: inline-block;
+}
+
+.title h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.title span {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
 .techniques-list {
     width: 100%;
     display: flex;
@@ -37,11 +64,14 @@
 
 .japanese-letters {
     position: absolute;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
-    color: transparent; /* Make the text color transparent */
-    -webkit-text-stroke: 1px rgb(255, 255, 255); /* Outline color and width */
-    text-stroke: 2px black; /* For non-webkit browsers */
+    color: transparent;
+    /* Make the text color transparent */
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    /* Outline color and width */
+    text-stroke: 2px black;
+    /* For non-webkit browsers */
     z-index: 0;
     font-family: var(--fonteLato);
 }
@@ -58,4 +88,13 @@
     text-align: center;
     margin-top: 5px;
     font-family: var(--fonteWork);
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.heroCardTechnique {
+    width: 100px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
 }

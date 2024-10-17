@@ -38,7 +38,11 @@ const Techniques = () => {
     <div className="techniques-container">
       <div className="techniques-wrapper">
         <div className="category">
-          <h2>Nage-Waza: Técnicas de Projeção</h2>
+          <div className="title">
+          <h2>Nage-Waza</h2>
+          <span>投げ技</span>
+          </div>
+          <span>Técnicas de Projeção</span>
           <div className="techniques-list">
             {nageWazaTechniques.map((technique, index) => (
               <TechniqueCard 
@@ -51,7 +55,8 @@ const Techniques = () => {
           </div>
         </div>
         <div className="category">
-          <h2>Katame-Waza: Técnicas de Solo</h2>
+        <h2>Nage-Waza</h2>
+        <span>Técnicas de Projeção</span>
           <div className="techniques-list">
             {katameWazaTechniques.map((technique, index) => (
               <TechniqueCard 
