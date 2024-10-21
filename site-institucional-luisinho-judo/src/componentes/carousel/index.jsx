@@ -9,7 +9,7 @@ const Carousel = () => {
     const items = [
         { title: "Branca", image: "https://kanayamaweb.com.br/images/faixas/branca.png", description: "Cor da pureza, mostra que o judoca deve manter a mente limpa diante do enorme conhecimento que tem a alcançar." },
         { title: "Cinza", image: "https://kanayamaweb.com.br/images/faixas/cinza.png", description: "Dada apenas para praticantes até aproximadamente 15 anos, mostra uma pequena evolução técnica." },
-        { title: "Azul", image: "https://kanayamaweb.com.br/images/faixas/azul.png ", description: "Denota amadurecimento e expectativa de evolução, já que o judoca continua dando andamento ao seu aprendizado." },
+        { title: "Azul", image: "https://kanayamaweb.com.br/images/faixas/azul.png", description: "Denota amadurecimento e expectativa de evolução, já que o judoca continua dando andamento ao seu aprendizado." },
         { title: "Amarela", image: "https://kanayamaweb.com.br/images/faixas/amarela.png", description: "Assim como o sol, traz a iluminação. O judoca deve buscar seu brilho, ganhando confiança e desenvolvendo a inteligência." },
         { title: "Laranja", image: "https://kanayamaweb.com.br/images/faixas/laranja.png", description: "Situada entre os elementos fogo e terra, mostra ao praticante que ele deve fortalecer as energias e a sua vontade de vencer." },
         { title: "Verde", image: "https://kanayamaweb.com.br/images/faixas/verde.png", description: "Simboliza harmonia e equilíbrio. Representa um oásis, mas também a certeza de que ainda há mais deserto a vencer." },
@@ -21,36 +21,36 @@ const Carousel = () => {
     ];
 
     const settings = {
-      dots: true,
-      infinite: true,
-      speed: 1000, 
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: "30px",
-      beforeChange: (current, next) => setActiveIndex(next),
-      cssEase: 'ease',
-  };
+        dots: true,
+        infinite: true,
+        speed: 1000, 
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "30px",
+        beforeChange: (current, next) => setActiveIndex(next),
+        cssEase: 'ease-in-out',
+    };
 
-  return (
-      <div className="carousel-container">
-          <Slider ref={sliderRef} {...settings}>
-              {items.map((item, index) => (
-                  <div key={index} className={`carousel-item ${index === activeIndex ? 'active' : ''}`}>
-                      <div className="carousel-item-wrapper">
-                          {index === activeIndex && <h2>{item.title}</h2>}
-                          <img src={item.image} alt={item.title} className="carousel-image" />
-                          {index === activeIndex && <p>{item.description}</p>}
-                      </div>
-                  </div>
-              ))}
-          </Slider>
-          <div className="carousel-navigation">
-              <button className="nav-button left" onClick={() => sliderRef.current.slickPrev()}></button>
-              <button className="nav-button right" onClick={() => sliderRef.current.slickNext()}></button>
-          </div>
-      </div>
-  );
+    return (
+        <div className="carousel-container">
+            <Slider ref={sliderRef} {...settings}>
+                {items.map((item, index) => (
+                    <div key={index} className={`carousel-item ${index === activeIndex ? 'active' : ''}`}>
+                        <div className="carousel-item-wrapper">
+                            <h2>{item.title}</h2>
+                            <img src={item.image} alt={item.title} className="carousel-image" />
+                            <p>{item.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
+            <div className="carousel-navigation"> 
+                <button className="nav-button left" onClick={() => sliderRef.current.slickPrev()}></button>
+                <button className="nav-button right" onClick={() => sliderRef.current.slickNext()}></button>
+            </div>
+        </div>
+    );
 };
 
 export default Carousel;

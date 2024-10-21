@@ -39,33 +39,78 @@ const Techniques = () => {
       <div className="techniques-wrapper">
         <div className="category">
           <div className="title">
-          <h2>Nage-Waza</h2>
-          <span>投げ技</span>
+            <h2>NAGE-WAZA</h2>
+            <div className="japanese-title">
+              <span>投げ技</span>
+            </div>
           </div>
           <span>Técnicas de Projeção</span>
-          <div className="techniques-list">
-            {nageWazaTechniques.map((technique, index) => (
-              <TechniqueCard 
-                key={index} 
-                name={technique.name} 
-                imageSrc={technique.imageSrc} 
-                japaneseLetters={technique.japaneseLetters} 
-              />
-            ))}
+          <div className="techniques-layout">
+            <div className="techniquesGroup">
+              <div className="technique">
+                <h4>te<br />-<br />waza</h4>
+                <span>手<br />
+                  技</span>
+              </div>
+              <div className="technique">
+                <h4>koshi<br />-<br />waza</h4>
+                <span>腰<br />
+                  技</span>
+              </div>
+              <div className="technique">
+                <h4>ashi<br />-<br />waza</h4>
+                <span>足<br />
+                  技</span>
+              </div>
+            </div>
+            <div className="techniques-list">
+              {nageWazaTechniques.map((technique, index) => (
+                <TechniqueCard
+                  key={index}
+                  name={technique.name}
+                  imageSrc={technique.imageSrc}
+                  japaneseLetters={technique.japaneseLetters}
+                />
+              ))}
+            </div>
           </div>
         </div>
         <div className="category">
-        <h2>Nage-Waza</h2>
-        <span>Técnicas de Projeção</span>
-          <div className="techniques-list">
-            {katameWazaTechniques.map((technique, index) => (
-              <TechniqueCard 
-                key={index} 
-                name={technique.name} 
-                imageSrc={technique.imageSrc} 
-                japaneseLetters={technique.japaneseLetters} 
-              />
-            ))}
+          <div className="title">
+            <h2>KATAME-WAZA</h2>
+            <div className="japanese-title">
+              <span>固め技</span>
+            </div>
+          </div>
+          <span>Técnicas de Solo</span>
+          <div className="techniques-layout">
+          <div className="techniquesGroup">
+              <div className="technique">
+                <h4>te<br />-<br />waza</h4>
+                <span>手<br />
+                  技</span>
+              </div>
+              <div className="technique">
+                <h4>koshi<br />-<br />waza</h4>
+                <span>腰<br />
+                  技</span>
+              </div>
+              <div className="technique">
+                <h4>ashi<br />-<br />waza</h4>
+                <span>足<br />
+                  技</span>
+              </div>
+            </div>
+            <div className="techniques-list">
+              {nageWazaTechniques.map((technique, index) => (
+                <TechniqueCard
+                  key={index}
+                  name={technique.name}
+                  imageSrc={technique.imageSrc}
+                  japaneseLetters={technique.japaneseLetters}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
