@@ -32,6 +32,16 @@
     gap: 1rem;
 }
 
+.text_techniques h1{
+    font-family: var(--fonteWork);
+    font-size: var(--h1);
+}
+
+.text_techniques span {
+    font-size: var(--h4);
+    font-weight: 200;
+}
+
 .image_hero_content{
     display: flex;
     justify-content: center;

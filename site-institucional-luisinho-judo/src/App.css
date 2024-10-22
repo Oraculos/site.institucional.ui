@@ -14,7 +14,7 @@ body {
     background-color: var(--vermelho-escuro) !important;
 }
 
-.fullContainerPage>* {
-    width: 100vh;
+.fullContainerPage > * {
+    width: 100%;
     overflow-x: hidden;
 }

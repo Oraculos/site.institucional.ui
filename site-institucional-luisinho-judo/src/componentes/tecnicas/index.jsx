@@ -1,7 +1,6 @@
-// src/components/tecnicas/Techniques.jsx
 import React from 'react';
 import './styles.css';
-import TechniqueCard from './TechniqueCard'; // Import the TechniqueCard component
+import TechniqueCard from './TechniqueCard';
 
 const Techniques = () => {
   const nageWazaTechniques = [
@@ -20,18 +19,18 @@ const Techniques = () => {
   ];
 
   const katameWazaTechniques = [
-    { name: 'Kesa-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/osaekomi-waza/kesa-gatame.png', japaneseLetters: '背負投' },
-    { name: 'Kata-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/osaekomi-waza/kata-gatame.png', japaneseLetters: '背負投' },
-    { name: 'Kuzure-Shiho-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/osaekomi-waza/kuzure-kami-shiho-gatame.png', japaneseLetters: '背負投' },
-    { name: 'Tate-Shiho-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/osaekomi-waza/tate-shiho-gatame.png', japaneseLetters: '背負投' },
-    { name: 'Do-Jime', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/shime-waza/do-jime.png', japaneseLetters: '背負投' },
-    { name: 'Gyak-Joji-Jime', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/shime-waza/gyaku-juji-jime.png', japaneseLetters: '背負投' },
-    { name: 'Ryo-Te-Jime', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/shime-waza/ryo-te-jime.png', japaneseLetters: '背負投' },
-    { name: 'Tsukkomi-Jime', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/shime-waza/tsukkomi-jime.png', japaneseLetters: '背負投' },
-    { name: 'Ashi-Garami', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/kansetsu-waza/ashi-garami.png', japaneseLetters: '背負投' },
-    { name: 'Ude-Garami', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/kansetsu-waza/ude-garami.png', japaneseLetters: '背負投' },
-    { name: 'Ude-Hishigi-Sankaku-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/kansetsu-waza/ude-hishigi-sankaku-gatame.png', japaneseLetters: '背負投' },
-    { name: 'Ude-Hishigi-Waki-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/kansetsu-waza/ude-hishigi-waki-gatame.png', japaneseLetters: '背負投' },
+    { name: 'Kesa-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/osaekomi-waza/kesa-gatame.png', japaneseLetters: '袈裟固' },
+    { name: 'Kata-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/osaekomi-waza/kata-gatame.png', japaneseLetters: '肩固' },
+    { name: 'Kuzure-Shiho-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/osaekomi-waza/kuzure-kami-shiho-gatame.png', japaneseLetters: '三角固' },
+    { name: 'Tate-Shiho-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/osaekomi-waza/tate-shiho-gatame.png', japaneseLetters: '縦四方固' },
+    { name: 'Do-Jime', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/shime-waza/do-jime.png', japaneseLetters: '胴絞' },
+    { name: 'Gyak-Joji-Jime', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/shime-waza/gyaku-juji-jime.png', japaneseLetters: '逆十字絞' },
+    { name: 'Ryo-Te-Jime', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/shime-waza/ryo-te-jime.png', japaneseLetters: '両手絞' },
+    { name: 'Tsukkomi-Jime', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/shime-waza/tsukkomi-jime.png', japaneseLetters: '突込絞' },
+    { name: 'Ashi-Garami', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/kansetsu-waza/ashi-garami.png', japaneseLetters: '足緘' },
+    { name: 'Ude-Garami', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/kansetsu-waza/ude-garami.png', japaneseLetters: '腕緘' },
+    { name: 'Ude-Hishigi-Sankaku-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/kansetsu-waza/ude-hishigi-sankaku-gatame.png', japaneseLetters: '腕挫三角固' },
+    { name: 'Ude-Hishigi-Waki-Gatame', imageSrc: 'src/componentes/tecnicas/assets/katame_waza/kansetsu-waza/ude-hishigi-waki-gatame.png', japaneseLetters: '腕挫腋固' },
   ];
 
   return (
@@ -84,7 +83,7 @@ const Techniques = () => {
           </div>
           <span>Técnicas de Solo</span>
           <div className="techniques-layout">
-          <div className="techniquesGroup">
+            <div className="techniquesGroup">
               <div className="technique">
                 <h4>te<br />-<br />waza</h4>
                 <span>手<br />
@@ -102,7 +101,7 @@ const Techniques = () => {
               </div>
             </div>
             <div className="techniques-list">
-              {nageWazaTechniques.map((technique, index) => (
+              {katameWazaTechniques.map((technique, index) => (
                 <TechniqueCard
                   key={index}
                   name={technique.name}
